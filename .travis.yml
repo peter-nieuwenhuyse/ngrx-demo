@@ -23,4 +23,3 @@ deploy:
   api_key:
     secure: 24e026a8-4655-49ea-a4f7-2fb2cb43e957
   app: ngrx-demo-app
-
