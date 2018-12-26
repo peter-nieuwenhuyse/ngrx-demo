@@ -21,7 +21,7 @@ app.get('/alive', function(req, res) {
 
 app.use(helmet());
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/ngrx-redux/'));
 
 app.enable('trust proxy');
 
@@ -29,7 +29,7 @@ app.get('/', function(req, res){
   res.render('index');
 });
 app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, '/dist', 'index.html'));
+  res.sendFile(path.join(__dirname, '/dist/ngrx-redux/', 'index.html'));
 });
 
 app.listen(port, function() {
