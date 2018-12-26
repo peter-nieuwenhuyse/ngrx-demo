@@ -8,6 +8,7 @@ const app = express();
 
 const port = process.env.PORT || 8080;
 
+app.set('view engine', 'html');
 app.use(compression());
 
 app.get('/health', function(req, res) {
@@ -25,7 +26,7 @@ app.use(express.static(__dirname + '/dist'));
 app.enable('trust proxy');
 
 app.get('/', function(req, res){
-  res.render('index.html');
+  res.render('index');
 });
 app.use(function(req, res) {
   res.sendFile(path.join(__dirname, '/dist', 'index.html'));
