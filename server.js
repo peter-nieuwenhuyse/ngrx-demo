@@ -25,12 +25,12 @@ app.use(express.static(__dirname + '/dist'));
 app.enable('trust proxy');
 
 app.get('/', function(req, res){
-  res.render('index');
+  res.render('index.html');
 });
 app.use(function(req, res) {
   res.sendFile(path.join(__dirname, '/dist', 'index.html'));
 });
 
 app.listen(port, function() {
-  console.log("Server running on port 8080");
+  console.log("Server running");
 });
