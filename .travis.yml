@@ -21,6 +21,6 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: heroku
+    secure=heroku
   app: ngrx-demo-app
 
