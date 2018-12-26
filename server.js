@@ -20,7 +20,7 @@ app.get('/alive', function(req, res) {
 
 app.use(helmet());
 
-app.use(express.static(__dirname + '/www'));
+app.use(express.static(__dirname + '/dist'));
 
 app.enable('trust proxy');
 
@@ -28,7 +28,7 @@ app.get('/', function(req, res){
   res.render('index');
 });
 app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, '/www', 'index.html'));
+  res.sendFile(path.join(__dirname, '/dist', 'index.html'));
 });
 
 app.listen(port, function() {
