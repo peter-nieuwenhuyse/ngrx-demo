@@ -1,17 +1,27 @@
 export const MENU_DATA = JSON.stringify({
   'Introduction': '/',
-  'Basic set up': {
-    'workspace': 'intro/workspace',
-    'cli': 'intro/cli',
-    'packages': 'intro/packages',
-    'test config': 'intro/jest'
+  'angular tips and tricks': {
+    'dumb and smart components': 'architecture/smart-and-dumb-components'
   },
-  'Project': {
-    'structure': 'project/structure'
+  'ngrx': {
+    'schematics': 'ngrx/schematics',
+    'store in feature modules': 'ngrx/feature-modules',
+    'selectors': 'ngrx/selectors',
+    'effects': 'ngrx/effects',
+    'facades': 'ngrx/facades'
   },
-  'fake backend': 'project/fake-backend',
+  'integrations': {
+    'Login keycloak': 'integrations/keycloak',
+    'Translate with crowdin': 'integrations/crowdin'
+  },
   'ci/cd': {
-    'travis': 'ci-cd/travis',
-    'heroku': 'ci-cd/heroku'
+    'test your build': 'ci-cd/travis',
+    'deploy on heroku': 'ci-cd/heroku'
+  },
+  'backend': {
+    'Serve your Angular': 'backend/server',
+    'Create a fake-backend interceptor': 'backend/fake-backend',
+    'Create a backend with nest.js': 'backend/nestjs',
+    'Work with firebase': 'backend/firebase'
   }
 });

@@ -8,7 +8,7 @@ import {Component} from '@angular/core';
 
 export class LayoutComponent {
   opened = false;
-
+  title = 'ANGULAR GEEK';
   toggleSideNav() {
     this.opened = !this.opened;
   }
