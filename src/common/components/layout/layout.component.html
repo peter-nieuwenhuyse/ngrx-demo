@@ -3,7 +3,8 @@
   <h1>NGRX WORKSHOP</h1>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav mode="side" [(opened)] = "opened"> Drawer-content</mat-sidenav>
+  <mat-sidenav mode="side" [(opened)] = "opened"> <app-sidenav></app-sidenav></mat-sidenav>
+
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

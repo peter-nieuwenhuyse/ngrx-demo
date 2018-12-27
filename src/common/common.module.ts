@@ -1,18 +1,26 @@
 import {NgModule} from '@angular/core';
 import {MatImportsModule} from './matImports.module';
 import {LayoutComponent} from './components/layout/layout.component';
-import {RouterModule} from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
+import {CommonRoutingModule} from './common-routing.module';
+import {SidenavComponent} from './components/sidenav/sidenav.component';
+import {CommonModule} from '@angular/common';
+import {BrowserModule} from '@angular/platform-browser';
 
-const components = [LayoutComponent, HomeComponent];
+const components = [
+  LayoutComponent,
+  SidenavComponent,
+  HomeComponent,
+];
+
 @NgModule({
   declarations: [...components],
   imports: [
+    CommonModule,
+    BrowserModule,
     MatImportsModule,
-    RouterModule.forRoot([
-      {path: '' , component: HomeComponent}
-    ])],
+    CommonRoutingModule
+    ],
   exports: [LayoutComponent]
 })
-
 export class CommonAppModule {}
