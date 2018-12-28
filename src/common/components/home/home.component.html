@@ -1,1 +1,4 @@
-<div class="content-container" *ngIf="content" [innerHTML]="content.body"></div>
+<div class="content-container" *ngIf="content">
+  <h1>{{content.seo_title}}</h1>
+  <div [innerHTML]="content.body"></div>
+</div>
