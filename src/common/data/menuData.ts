@@ -14,6 +14,9 @@ export const MENU_DATA = JSON.stringify({
     'Login keycloak': 'integrations/keycloak',
     'Translate with crowdin': 'integrations/crowdin'
   },
+  'content': {
+    'Managing content with butterCMS': 'content/buttercms'
+  },
   'ci/cd': {
     'test your build': 'ci-cd/travis',
     'deploy on heroku': 'ci-cd/heroku'
