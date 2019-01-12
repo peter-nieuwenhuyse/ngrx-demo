@@ -6,11 +6,13 @@ import {CommonRoutingModule} from './common-routing.module';
 import {SidenavComponent} from './components/sidenav/sidenav.component';
 import {CommonModule} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
+import {FooterComponent} from './components/footer/footer.component';
 
 const components = [
   LayoutComponent,
   SidenavComponent,
   HomeComponent,
+  FooterComponent,
 ];
 
 @NgModule({
